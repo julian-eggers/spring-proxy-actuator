@@ -14,7 +14,7 @@ SpringBoot Proxy Actuator
 	<dependency>
 		<groupId>com.itelg.spring</groupId>
 		<artifactId>spring-proxy-actuator</artifactId>
-		<version>0.1.0-RELEASE</version>
+		<version>0.1.1-RELEASE</version>
 	</dependency>
 </dependencies>
 ```

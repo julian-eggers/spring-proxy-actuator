@@ -38,6 +38,8 @@ public class ProxyHealthIndicator extends AbstractHealthIndicator
             URL url = new URL("https://api.ipify.org/");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
+            connection.setConnectTimeout(10000);
+            connection.connect();
             int statusCode = connection.getResponseCode();
             
             if (statusCode == 200)
