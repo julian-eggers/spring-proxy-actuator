@@ -4,5 +4,11 @@ node
   checkout scm
 
   stage 'Build'
-  "mvn clean package"
+  mvn 'clean package'
+}
+
+
+def mvn(args) 
+{
+    sh "${tool 'Maven'}/bin/mvn ${args}"
 }
