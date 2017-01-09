@@ -4,5 +4,5 @@ node
   checkout scm
 
   stage 'Build'
-  mvn clean package"
+  mvn clean package
 }
