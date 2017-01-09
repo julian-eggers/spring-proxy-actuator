@@ -5,8 +5,10 @@ node
 
   stage 'Build'
   mvn 'clean package'
+  
+  stage 'Deploy'
+  mvn 'clean deploy'
 }
-
 
 def mvn(args) 
 {
