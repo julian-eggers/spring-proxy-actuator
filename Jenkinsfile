@@ -1,17 +1,25 @@
 node 
 {
-  stage 'Checkout'
-  checkout scm
-
-  stage 'Build'
-  mvn 'clean package -Dmaven.test.skip=true'
+  stage('Checkout')
+  {
+    checkout scm
+  }
   
-  stage 'Unit-Tests'
-  mvn 'clean package'
+  stage('Build')
+  {
+    mvn 'clean package -Dmaven.test.skip=true'
+  }
   
-  stage 'Deploy'
-  mvn 'clean deploy -Dmaven.test.skip=true'
-}
+  stage('Unit-Tests')
+  {
+    mvn 'clean package'
+  }
+  
+  stage('Deploy')
+  {
+    mvn 'clean deploy -Dmaven.test.skip=true'
+  }
+}  
 
 def mvn(args) 
 {
