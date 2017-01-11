@@ -12,5 +12,5 @@ node
 
 def mvn(args) 
 {
-    sh "${tool 'Maven'}/bin/mvn ${args}"
+    sh "mvn ${args}"
 }
