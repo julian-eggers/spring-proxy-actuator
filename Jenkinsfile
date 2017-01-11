@@ -12,12 +12,12 @@ node
   
   stage('Unit-Tests')
   {
-    mvn 'clean package'
+    mvn 'test'
   }
   
   stage('Deploy')
   {
-    mvn 'clean deploy -Dmaven.test.skip=true'
+    mvn 'deploy -Dmaven.test.skip=true'
   }
 }  
 
