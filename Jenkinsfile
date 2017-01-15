@@ -5,23 +5,18 @@ node
     checkout scm
   }
   
-  stage('Build')
+  stage('Compile')
   {
-    mvn 'clean package -Dmaven.test.skip=true'
+    sh 'mvn clean compile'
   }
   
   stage('Unit-Tests')
   {
-    mvn 'test'
+    sh 'mvn test'
   }
   
   stage('Deploy')
   {
-    mvn 'deploy -Dmaven.test.skip=true'
+    sh 'mvn deploy -Dmaven.test.skip=true'
   }
-}  
-
-def mvn(args) 
-{
-    sh "mvn ${args}"
 }
