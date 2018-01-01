@@ -45,6 +45,11 @@
       <artifactId>slf4j-api</artifactId>
       <version>1.7.25</version>
     </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.1</version>
+    </dependency>
 
     <!-- Testing -->
     <dependency>
@@ -76,8 +81,8 @@
 
   <scm>
     <url>https://github.com/julian-eggers/xpath-helper</url>
-    <connection>scm:git:https://github.com/julian-eggers/xpath-helper.git</connection>
-    <developerConnection>scm:git:https://github.com/julian-eggers/xpath-helper.git</developerConnection>
+    <connection>scm:git:https://github.com/julian-eggers/spring-proxy-actuator.git</connection>
+    <developerConnection>scm:git:https://github.com/julian-eggers/spring-proxy-actuator.git</developerConnection>
   </scm>
 
   <developers>
