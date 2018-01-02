@@ -1,5 +1,5 @@
 spring-proxy-actuator
-============
+=====================
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.itelg.spring/spring-proxy-actuator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.itelg.spring/spring-proxy-actuator)
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/dec638a857614edfb153ba55d1d29a3b)](https://www.codacy.com/app/eggers-julian/spring-proxy-actuator)
@@ -10,13 +10,11 @@ SpringBoot Proxy Actuator
 
 #### Maven
 ```xml
-<dependencies>
-	<dependency>
-		<groupId>com.itelg.spring</groupId>
-		<artifactId>spring-proxy-actuator</artifactId>
-		<version>0.1.1-RELEASE</version>
-	</dependency>
-</dependencies>
+<dependency>
+	<groupId>com.itelg.spring</groupId>
+	<artifactId>spring-proxy-actuator</artifactId>
+	<version>0.2.0-RELEASE</version>
+</dependency>
 ```
 
 #### Example
